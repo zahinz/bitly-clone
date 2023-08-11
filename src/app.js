@@ -23,7 +23,9 @@ app.use(helmet());
 app.use(morgan("tiny"));
 
 // initialise database
-dbInit();
+if (config.nodeEnv !== "test") {
+  dbInit();
+}
 
 // Apply routes before error handling
 app.use("/", root);

@@ -6,7 +6,6 @@ import {
   registerValidator,
 } from "../middleware/validator/auth";
 import { validate } from "../middleware/validator";
-import { body } from "express-validator";
 import { createLinkValidator } from "../middleware/validator/link";
 
 const apiRoutes = Router();
