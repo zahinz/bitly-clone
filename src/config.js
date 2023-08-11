@@ -20,6 +20,7 @@ const config = {
     user: process.env["POSTGRES_USER"],
     database: process.env["POSTGRES_DATABASE"],
     password: process.env["POSTGRES_PASSWORD"],
+    ssl: process.env["POSTGRES_SSL"],
   },
 
   clientOrigins: {
